@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentFrag"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+   <TextView
+       android:layout_marginTop="@dimen/_15sdp"
+       android:id="@+id/txtUsrName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Bhaskar"
+       android:textStyle="italic"
+       android:textColor="@android:color/black"
+       android:textSize="@dimen/_23sdp"/>
+
+
+   <TextView
+       android:id="@+id/txtLocation"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Jodhpur"
+       android:textColor="@android:color/black"
+       android:textSize="@dimen/_23sdp"/>
+   <TextView
+       android:id="@+id/txtDate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="June 30, 2020"
+       android:textColor="#959DA6"
+       android:textSize="@dimen/_10sdp"/>
+   <TextView
+       android:id="@+id/txtDesc"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Sunny"
+       android:textColor="#7365E5"
+       android:textSize="@dimen/_16sdp"/>
+
+   <LinearLayout
+       android:layout_marginTop="@dimen/_100sdp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+
+      <TextView
+          android:id="@+id/txtTemp"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/_60sdp"
+          android:text="37 \u2103"/>
+   </LinearLayout>
+   <TextView
+       android:layout_marginTop="@dimen/_100sdp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Additional Info"
+       android:textColor="@android:color/black"
+       android:textSize="@dimen/_18sdp"/>
+   <RelativeLayout
+       android:layout_marginTop="@dimen/_15sdp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_alignParentLeft="true"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Wind Speed"
+             android:textColor="#959DA6"
+             android:textSize="@dimen/_14sdp"/>
+         <TextView
+             android:id="@+id/txtWindSpeed"
+             android:textColor="@android:color/black"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="35"
+             android:textSize="@dimen/_15sdp"/>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+         <TextView
+             android:textColor="#959DA6"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Humidity"
+             android:textSize="@dimen/_14sdp"/>
+         <TextView
+             android:id="@+id/txtHumidity"
+             android:textColor="@android:color/black"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="35"
+             android:textSize="@dimen/_15sdp"/>
+
+      </LinearLayout>
+   </RelativeLayout>
+
+
+</LinearLayout>
